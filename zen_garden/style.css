@@ -1,0 +1,74 @@
+/* Typography */
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    font-size: 3.5625em;
+}
+
+h2 {
+    font-size: 3em;
+}
+
+h3 {
+    font-size: 2em;
+}
+
+p {
+    font-size: 1em;
+    line-height: 2;
+}
+
+/* Layout */
+.page-wrapper {
+    max-width: 600px;
+    margin: auto;
+    background-color: #dddddd;
+}
+
+@media (min-width: 1000px){
+    .page-wrapper {
+        margin: auto;
+    }
+    
+    /* before */
+    .sidebar {
+        position: fixed;
+        right: -350px;
+        top: -600px;
+        background-color: pink;
+        overflow: auto;
+        /* height: calc(100vh - 100px); */
+        height: 100vh;
+        max-height: 600px;
+        display: block;
+        transition: all .5s linear;
+        transform: rotate(180deg) scale(.01);
+    }
+
+    /* after */
+    .menu_active .sidebar {
+        display: block;
+        right: 0px;
+        top: 0px;
+        transform: rotate(-10deg) scale(1);
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
